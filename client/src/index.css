@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout {
+  font-family: 'Outfit', 'sans-serif';
+  @apply flex h-screen bg-primary;
+}
+.content {
+  @apply flex overflow-y-scroll p-3;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar * {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff !important;
+  border-radius: 5px;
+}
+
+::selection {
+  @apply bg-primary-500 text-white;
+}

@@ -1,0 +1,27 @@
+.input {
+  @apply bg-tertiary h-11 w-full rounded-full px-6 outline-none;
+}
+
+.wrapper {
+  @apply relative -top-20 flex w-screen items-center justify-center text-base font-medium text-text_color;
+}
+
+.modal {
+  @apply z-50 flex w-[28rem] flex-col items-center gap-3 rounded-[40px] bg-white px-10 py-6;
+}
+
+.btn {
+  @apply mb-3 flex h-11 w-full items-center justify-center gap-3 rounded-full bg-primary text-amber-50 transition-colors hover:cursor-pointer hover:bg-primary-500;
+}
+
+.heading {
+  @apply my-4 text-3xl font-bold text-primary;
+}
+
+.link {
+  @apply font-semibold text-primary;
+}
+
+.error {
+  @apply my-1 flex h-11 w-full items-center justify-center gap-3 rounded-full bg-error bg-opacity-10 p-2 font-semibold text-error;
+}

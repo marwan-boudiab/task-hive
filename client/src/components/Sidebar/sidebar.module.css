@@ -1,0 +1,67 @@
+.expanded {
+  @apply min-w-[19rem] max-w-[19rem];
+}
+
+.aside {
+  @apply h-screen p-4 text-white;
+}
+
+.nav {
+  @apply flex h-full flex-col bg-primary;
+}
+
+.logo {
+  @apply flex items-center justify-between;
+}
+
+.btn {
+  @apply ms-0 rounded-full bg-white p-2 text-primary;
+}
+
+.icon {
+  @apply size-5;
+}
+
+.pages {
+  @apply flex-1;
+}
+
+.nav_links {
+  @apply relative mx-auto my-2 ms-0 flex cursor-pointer items-center rounded-full p-2 font-medium transition-colors hover:bg-primary-500 hover:text-white;
+}
+
+.active_link {
+  @apply bg-white text-primary hover:bg-white hover:text-primary;
+}
+
+.link_text {
+  @apply ml-3 overflow-hidden text-sm transition-all;
+}
+
+.profile_wrapper {
+  @apply flex h-16 items-center justify-center gap-2;
+}
+
+.avatar {
+  @apply icon ms-0 rounded-full bg-white p-2 text-primary;
+}
+
+.profile_info {
+  @apply flex w-full flex-wrap items-center gap-2 overflow-hidden transition-all;
+}
+
+.user_email {
+  @apply text-sm font-semibold;
+}
+
+.user_name {
+  @apply font-semibold;
+}
+
+.tooltip {
+  @apply invisible absolute left-full ml-6 -translate-x-3 rounded-md bg-primary-500 px-2 py-1 text-sm text-white opacity-20 transition-all;
+}
+
+.logout_btn {
+  @apply ml-auto mr-2 rounded-full bg-white p-2 text-primary;
+}

@@ -1,0 +1,23 @@
+.wrapper {
+  @apply flex w-screen items-start justify-between pb-8;
+}
+
+.board_column {
+  @apply flex w-full flex-col;
+}
+
+.droppable_area {
+  @apply flex w-auto flex-col items-center px-2;
+}
+
+.column_title {
+  @apply mb-[0.625rem] flex w-full items-center justify-center rounded-full bg-white py-2 text-[0.8rem] font-medium text-primary;
+}
+
+.btn {
+  @apply mx-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full bg-primary-500 py-[0.5rem] text-xs font-medium text-white transition-all hover:bg-primary-800;
+}
+
+.icon {
+  @apply size-5;
+}
