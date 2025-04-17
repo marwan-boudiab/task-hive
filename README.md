@@ -3,10 +3,10 @@
 A full-stack web application designed for managing tasks using an interactive Kanban board interface. Task Hive allows users to create, update, move, and delete tasks across different stages (Backlog, Pending, To Do, Doing, Done).
 
 <div align="center">
-  <a href="https://youtu.be/1lLOpGmCBjA">
-    <img src="https://img.youtube.com/vi/1lLOpGmCBjA/maxresdefault.jpg" alt="Task Hive Demo" width="600" style="border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.2);">
+  <a href="https://www.marwan-boudiab.com/projects/task-hive#demo">
+    <img src="https://crrwymojtb.ufs.sh/f/0ge4q9E4PJeZa9eQbCnoEhtMidny7gKNFS509VXz8UIqH3GT" alt="Task Hive Demo" width="600" style="border-radius: 12px;">
     <br>
-    <img width="96" height="96" src="https://img.icons8.com/color/96/youtube-play.png" alt="youtube-play"/>
+    <p><strong>▶️ Click to watch project demo</strong></p>
   </a>
 </div>
 
