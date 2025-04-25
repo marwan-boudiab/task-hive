@@ -7,7 +7,7 @@ import styles from './sidebar.module.css';
 const links = [
   { path: '/', title: 'Home', icon: <Home className={styles.icon} /> },
   { path: '/board', title: 'Kanban', icon: <Kanban className={styles.icon} /> },
-  { path: '/settings', title: 'Settings', icon: <Settings className={styles.icon} /> },
+  // { path: '/settings', title: 'Settings', icon: <Settings className={styles.icon} /> },
 ];
 
 // Defining the SideNav component

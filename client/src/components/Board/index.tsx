@@ -18,9 +18,18 @@ const Board = () => {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedColumn, setSelectedColumn] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    if (user) fetchBoards(dispatch, user.token);
+    const loadBoards = async () => {
+      setIsLoading(true);
+      if (user) {
+        await fetchBoards(dispatch, user.token);
+      }
+      setIsLoading(false);
+    };
+    
+    loadBoards();
   }, [dispatch, user]);
 
   const openModal = (columnId: string) => {
@@ -32,6 +41,19 @@ const Board = () => {
   // todo: export classes to external files
   // const classes = getClasses()
 
+  if (isLoading) {
+    return (
+      <div className={styles.wrapper}>
+        <div className="flex items-center justify-center w-full h-full">
+          <div className="flex space-x-2">
+            <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
+            <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+            <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <>
