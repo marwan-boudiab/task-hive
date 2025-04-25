@@ -1,4 +1,4 @@
-import { Home, Kanban, Settings } from 'lucide-react';
+import { Home, Kanban } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import SidebarItem from './components/SidebarItem';
 import styles from './sidebar.module.css';
