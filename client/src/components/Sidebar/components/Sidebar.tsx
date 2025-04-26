@@ -1,4 +1,4 @@
-import { LogOut, Menu, User } from 'lucide-react';
+import { LogOut, Menu } from 'lucide-react';
 import { useState, memo } from 'react';
 import { useLocation } from 'react-router-dom';
 import styles from '../sidebar.module.css';
