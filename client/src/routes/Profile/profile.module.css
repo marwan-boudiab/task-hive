@@ -3,15 +3,15 @@
 }
 
 .profile_card {
-  @apply z-50 flex w-[28rem] flex-col items-center gap-2 rounded-[40px] bg-white px-10 py-6;
+  @apply z-50 flex w-full max-w-[28rem] flex-col items-center gap-2 rounded-[40px] bg-white px-4 sm:px-6 md:px-10 py-6 mx-4 sm:mx-0;
 }
 
 .profile_title {
-  @apply my-2 text-3xl font-bold text-primary;
+  @apply my-2 text-2xl sm:text-3xl font-bold text-primary;
 }
 
 .avatar {
-  @apply w-20 h-20 rounded-full bg-primary text-white flex justify-center items-center text-3xl font-bold mb-4;
+  @apply w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-primary text-white flex justify-center items-center text-2xl sm:text-3xl font-bold mb-4;
 }
 
 .profile_info {
@@ -36,5 +36,5 @@
 }
 
 .logout_button {
-  @apply mb-2 flex h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-amber-50 transition-colors hover:cursor-pointer hover:bg-primary-500;
+  @apply mb-2 flex h-10 sm:h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-amber-50 transition-colors hover:cursor-pointer hover:bg-primary-500;
 }

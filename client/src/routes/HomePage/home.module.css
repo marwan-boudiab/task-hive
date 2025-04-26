@@ -1,0 +1,75 @@
+.container {
+  @apply flex flex-col items-center justify-start min-h-screen w-full text-text_color p-4 sm:p-6 md:p-8;
+}
+
+.content {
+  @apply w-full max-w-4xl text-center space-y-6 sm:space-y-8 md:space-y-12 py-8;
+}
+
+.headerSection {
+  @apply space-y-2 sm:space-y-3 md:space-y-4;
+}
+
+.title {
+  @apply text-3xl sm:text-4xl md:text-5xl font-bold text-white;
+}
+
+.subtitle {
+  @apply text-lg sm:text-xl text-white opacity-80 px-2;
+}
+
+.description {
+  @apply text-sm sm:text-base text-white/70 max-w-2xl mx-auto px-4;
+}
+
+.featureCards {
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8 px-2;
+}
+
+.featureCard {
+  @apply p-4 sm:p-5 md:p-6 rounded-3xl bg-white transition-all duration-300 ease-in-out hover:-translate-y-1;
+}
+
+.featureCardWide {
+  @apply p-4 sm:p-5 md:p-6 rounded-3xl bg-white transition-all duration-300 ease-in-out hover:-translate-y-1 sm:col-span-2 md:col-span-1 sm:max-w-md sm:mx-auto md:max-w-none;
+}
+
+.featureTitle {
+  @apply text-base md:text-lg font-semibold mb-2 text-primary;
+}
+
+.featureDescription {
+  @apply text-sm text-text_color opacity-70;
+}
+
+.benefitsSection {
+  @apply bg-white/10 rounded-3xl p-4 sm:p-6 md:p-8 backdrop-blur-sm mx-2;
+}
+
+.benefitsTitle {
+  @apply text-xl sm:text-2xl font-bold text-white mb-4 md:mb-6;
+}
+
+.benefitsList {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 text-left;
+}
+
+.benefitItem {
+  @apply flex items-start space-x-2;
+}
+
+.benefitIcon {
+  @apply h-5 w-5 text-white shrink-0 mt-0.5;
+}
+
+.benefitText {
+  @apply text-sm sm:text-base text-white/90;
+}
+
+.ctaButton {
+  @apply inline-flex items-center px-6 py-2.5 sm:px-8 sm:py-3 bg-white text-primary font-semibold rounded-full transition-all duration-300 ease-in-out hover:-translate-y-1 mx-auto;
+}
+
+.ctaIcon {
+  @apply ml-2 h-4 w-4;
+}
