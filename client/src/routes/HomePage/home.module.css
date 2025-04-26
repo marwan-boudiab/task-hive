@@ -1,5 +1,5 @@
 .container {
-  @apply flex flex-col items-center justify-start min-h-screen w-full text-text_color p-4 sm:p-6 md:p-8;
+  @apply flex flex-col items-center justify-start min-h-screen w-full text-text_color px-4 sm:px-6 md:px-8;
 }
 
 .content {
