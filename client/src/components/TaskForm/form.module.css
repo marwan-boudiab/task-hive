@@ -7,7 +7,7 @@
 }
 
 .modal {
-  @apply z-50 flex w-[28rem] flex-col items-center gap-3 rounded-[40px] bg-white px-10 py-6;
+  @apply z-50 flex w-[90%] max-w-[28rem] flex-col items-center gap-3 rounded-[40px] bg-white px-6 sm:px-10 py-6;
 }
 
 .visible {
@@ -23,11 +23,11 @@
 }
 
 .heading {
-  @apply mb-4 text-3xl font-bold text-primary;
+  @apply mb-4 text-2xl sm:text-3xl font-bold text-primary;
 }
 
 .row {
-  @apply flex w-full flex-row gap-3;
+  @apply flex w-full flex-col sm:flex-row gap-3;
 }
 
 .icon {

@@ -1,5 +1,5 @@
 .nav_container {
-  @apply block bottom-0 left-0 mt-auto w-full z-50 md:hidden;
+  @apply block bottom-0 left-0 mt-auto w-full z-40 md:hidden;
 }
 
 .nav_wrapper {
