@@ -1,9 +1,9 @@
 .wrapper {
-  @apply flex w-screen items-start justify-between pb-8;
+  @apply flex w-full flex-col md:flex-row md:w-screen items-start justify-between pb-8 overflow-x-auto;
 }
 
 .board_column {
-  @apply flex w-full flex-col;
+  @apply flex w-full flex-col ;
 }
 
 .droppable_area {
@@ -15,7 +15,7 @@
 }
 
 .btn {
-  @apply mx-auto flex w-11/12 cursor-pointer items-center justify-center rounded-full bg-primary-500 py-[0.5rem] text-xs font-medium text-white transition-all hover:bg-primary-800;
+  @apply mx-auto flex md:w-11/12 w-[98%] md:mb-0 mb-2 cursor-pointer items-center justify-center rounded-full bg-primary-500 py-[0.5rem] text-xs font-medium text-white transition-all hover:bg-primary-800;
 }
 
 .icon {

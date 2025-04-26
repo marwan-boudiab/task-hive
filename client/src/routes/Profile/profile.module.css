@@ -1,0 +1,40 @@
+.profile_container {
+  @apply relative flex w-screen min-h-full items-start justify-center text-base font-medium text-text_color;
+}
+
+.profile_card {
+  @apply z-50 flex w-[28rem] flex-col items-center gap-2 rounded-[40px] bg-white px-10 py-6;
+}
+
+.profile_title {
+  @apply my-2 text-3xl font-bold text-primary;
+}
+
+.avatar {
+  @apply w-20 h-20 rounded-full bg-primary text-white flex justify-center items-center text-3xl font-bold mb-4;
+}
+
+.profile_info {
+  @apply w-full mb-6;
+}
+
+.profile_item {
+  @apply mb-2 pb-2 ;
+  /* @apply mb-4 pb-4 border-b border-tertiary; */
+}
+
+/* .profile_item:last-child {
+  @apply border-b-0;
+} */
+
+.label {
+  @apply block font-semibold text-primary text-sm mb-2;
+}
+
+.value {
+  @apply block text-base text-text_color;
+}
+
+.logout_button {
+  @apply mb-2 flex h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-amber-50 transition-colors hover:cursor-pointer hover:bg-primary-500;
+}

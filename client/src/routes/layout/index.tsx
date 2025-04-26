@@ -1,19 +1,32 @@
 import { Outlet } from 'react-router-dom';
 import { BoardContextProvider } from '../../context/BoardContext';
 import SideNav from '../../components/Sidebar';
+import MobileNav from '../../components/MobileNav';
+import { useState, useEffect } from 'react';
 
-const index = () => {
+const Layout = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="layout">
-      <SideNav />
-      {/* <div className="absolute left-0 top-0 h-full w-full bg-tasks-bg bg-cover bg-center -z-50"></div>
-      <div className="absolute left-0 top-0 h-full w-full bg-white/30 backdrop-blur-3xl -z-10"></div> */}
-      <div className="content">
+      {!isMobile && <SideNav />}
+      <div className="content pb-16 md:pb-0">
         <BoardContextProvider>
           <Outlet />
         </BoardContextProvider>
       </div>
+      {isMobile && <MobileNav />}
     </div>
   );
 };
-export default index;
+
+export default Layout;

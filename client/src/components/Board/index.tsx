@@ -44,11 +44,16 @@ const Board = () => {
   if (isLoading) {
     return (
       <div className={styles.wrapper}>
-        <div className="flex items-center justify-center w-full h-full">
-          <div className="flex space-x-2">
-            <div className="w-2 h-2 bg-white rounded-full animate-bounce"></div>
-            <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-            <div className="w-2 h-2 bg-white rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+        <div className="flex items-center justify-center w-full h-screen">
+          <div className="flex flex-col items-center space-y-4">
+            <div className="flex space-x-3">
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.4s' }}></div>
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.6s' }}></div>
+              <div className="w-3 h-3 bg-primary rounded-full animate-pulse" style={{ animationDelay: '0.8s' }}></div>
+            </div>
+            <p className="text-white text-sm font-medium animate-pulse">Loading your tasks...</p>
           </div>
         </div>
       </div>

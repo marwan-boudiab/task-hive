@@ -1,0 +1,15 @@
+.nav_container {
+  @apply block bottom-0 left-0 mt-auto w-full z-50 md:hidden;
+}
+
+.nav_wrapper {
+  @apply flex justify-around items-center bg-primary-500 py-2 px-2;
+}
+
+.nav_item {
+  @apply flex flex-col items-center justify-center text-white text-xs gap-1 p-2 rounded-full;
+}
+
+.active {
+  @apply bg-primary-500;
+}

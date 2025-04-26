@@ -3,9 +3,18 @@
 }
 
 .aside {
-  @apply h-screen p-4 text-white;
+  @apply h-screen p-4 text-white transition-all duration-300;
 }
 
+.mobile_aside {
+  @apply fixed z-50 h-screen w-16 p-2 text-white transition-all duration-300;
+}
+
+.mobile_expanded {
+  @apply w-[19rem];
+}
+
+/* Keep existing styles */
 .nav {
   @apply flex h-full flex-col bg-primary;
 }

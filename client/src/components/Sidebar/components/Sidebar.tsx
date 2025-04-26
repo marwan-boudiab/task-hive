@@ -55,7 +55,8 @@ const Sidebar = memo(({ children }: { children: React.ReactNode }) => {
               {/* User avatar */}
               {/* <img src="/assets/avatar.png" alt="avatar" className={styles.avatar} /> */}
               <div className={styles.btn}>
-                <User className={styles.icon} />
+                {/* <User className={styles.icon} /> */}
+                <p className='size-5 flex items-center justify-center'>{user.email.charAt(0).toUpperCase()}</p>
               </div>
               {expanded && (
                 <div className={styles.profile_info}>

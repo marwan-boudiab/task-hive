@@ -3,11 +3,11 @@
 }
 
 .wrapper {
-  @apply relative -top-20 flex w-screen items-center justify-center text-base font-medium text-text_color;
+  @apply relative flex md:-top-20 -top-0 w-screen min-h-full items-center justify-center text-base font-medium text-text_color pt-0 mt-0;
 }
 
 .modal {
-  @apply z-50 flex w-[28rem] flex-col items-center gap-3 rounded-[40px] bg-white px-10 py-6;
+  @apply z-50 flex w-full max-w-[28rem] flex-col items-center gap-3 rounded-[40px] bg-white px-6 sm:px-10 py-6 mx-4 sm:mx-0 my-4;
 }
 
 .btn {
@@ -15,7 +15,7 @@
 }
 
 .heading {
-  @apply my-4 text-3xl font-bold text-primary;
+  @apply my-4 text-2xl sm:text-3xl font-bold text-primary;
 }
 
 .link {
@@ -23,5 +23,5 @@
 }
 
 .error {
-  @apply my-1 flex h-11 w-full items-center justify-center gap-3 rounded-full bg-error bg-opacity-10 p-2 font-semibold text-error;
+  @apply my-1 flex h-auto min-h-[2.75rem] w-full items-center justify-center gap-3 rounded-full bg-error bg-opacity-10 p-2 px-4 font-semibold text-error text-sm sm:text-base text-center;
 }
